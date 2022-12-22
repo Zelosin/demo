@@ -1,0 +1,23 @@
+server:
+  port: 8000
+hbase:
+  master:
+    port: "60000"
+    info:
+      port: "60010"
+  regionserver:
+    port: "60020"
+    info:
+      port: "60030"
+  zookeeper:
+    quorum: "127.0.0.1:2181"
+  localcluster:
+    port:
+      ephemeral: "false"
+  client:
+    retries:
+      number: "3"
+  rpc:
+    timeout: "10000"
+    shortoperation:
+      timeout: "5000"
